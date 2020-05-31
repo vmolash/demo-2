@@ -131,9 +131,20 @@ footer {
 }
 .product-item {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    article {
-        max-width: 370px;
+    flex-direction: column;
+    @include break(500px) {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        article {
+            max-width: 370px;
+        }
     }
+    form {
+        margin-top: 2rem;
+    }
+}
+input[type=image] {
+    outline: none;
+    border: none;
 }
