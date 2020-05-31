@@ -26,18 +26,48 @@
           </div>
           <nav>
               <span id="burger">&#9776;</span>
-              <a href="#"><img src="../images/PFJ.png" alt="PFJ Logo"></a>
+              <a href="../index.html"><img src="../images/PFJ.png" alt="PFJ Logo"></a>
               <a href=""><img src="https://img.icons8.com/ios-filled/50/000000/shopping-bag.png"/></a>
           </nav>
      </header>
 
-    <img src="../images/bracelet.jpg" alt="Ring" />
-    <h3>Red Diamond Cuff</h3>
-    <h3>$5,000</h3>
-    <h4>
-      Rose-cut diamonds in a vibrant and fiery shade of red light up the tips of
-      this one-of-a-kind gold cuff.
-    </h4>
+    <section class="product-item">
+        <img src="../images/bracelet.jpg" alt="Ring" />
+        <article>
+            <h3>Red Diamond Cuff</h3>
+            <h3>$5,000</h3>
+            <h4>
+              Rose-cut diamonds in a vibrant and fiery shade of red light up the tips of
+              this one-of-a-kind gold cuff.
+            </h4>
+            <form target="paypal"
+                action="https://www.paypal.com/cgi-bin/webscr"
+                method="post">
+                <input type="hidden" name="cmd" value="_s-xclick" />
+                <input type="hidden" name="hosted_button_id" value="RTB9TLPLZQ8PG" />
+
+                <table>
+                    <!-- <tr>
+                      <td><input type="hidden" name="on0" value="Quantity" />Quantity</td>
+                    </tr> -->
+                    <tr>
+                      <td>
+                        <select name="os0">
+                          <option value="1">1 $5000.00 USD</option>
+                          <option value="2">2 $10000.00 USD</option>
+                          <option value="3">3 $15000.00 USD</option>
+                        </select>
+                      </td>
+                    </tr>
+                  </table>
+                  <input type="hidden" name="currency_code" value="USD" />
+                  
+                  <input
+                    type="image" src="../images/Cart.png" id="submit" name="submit" alt="PayPal - The safer, easier way to pay online!" />
+                  <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"/>
+            </form>
+        </article>
+    </section>
 
     <footer>
         <p class="container t-center">

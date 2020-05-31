@@ -192,12 +192,27 @@ footer a {
 
 .product-item {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  flex-direction: column;
 }
 
-.product-item article {
-  max-width: 370px;
+@media (min-width: 500px) {
+  .product-item {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .product-item article {
+    max-width: 370px;
+  }
+}
+
+.product-item form {
+  margin-top: 2rem;
+}
+
+input[type=image] {
+  outline: none;
+  border: none;
 }
 
 html {
