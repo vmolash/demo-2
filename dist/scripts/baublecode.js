@@ -1,3 +1,17 @@
+  // navigation
+  let burger = document.getElementById('burger');
+  console.log(burger);
+  let closeBtn = document.getElementById('close');
+  burger.addEventListener('click', openNav);
+  closeBtn.addEventListener('click', closeNav);
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  
   // ACCORDION
   var acc = document.getElementsByClassName("accordion");
   var i;
@@ -95,26 +109,4 @@
   document.addEventListener("click", closeAllSelect);
   
   
-  // SLIDESHOW
-  var slideIndex = 1;
-  showSlides(slideIndex);
-  
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-  
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-  
-  function showSlides(n) {
-    var slides = document.getElementsByClassName("mySlides");
-    
-    if (n > slides.length) {slideIndex = 1}    
-    if (n < 1) {slideIndex = slides.length}
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    slides[slideIndex-1].style.display = "block";  
-  }
-  // END SLIDESHOW
+ 
