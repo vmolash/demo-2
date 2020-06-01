@@ -203,6 +203,7 @@ footer {
 @media (min-width: 500px) {
   .product-item {
     flex-direction: row;
+    justify-content: center;
   }
   .product-item article {
     max-width: 370px;

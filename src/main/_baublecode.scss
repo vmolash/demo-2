@@ -140,6 +140,7 @@ footer {
     
     @include break(500px) {
         flex-direction: row;
+        justify-content: center;
         article {
             max-width: 370px;
             margin-left: 3rem;
