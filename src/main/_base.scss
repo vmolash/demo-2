@@ -7,10 +7,6 @@ body {
     margin: 0 0 100px;
     padding: 25px;
 }
-// .wrapper {
-//     display: grid;
-//     grid-template-rows: 1fr auto;
-// }
 h1, h2, h3, h4 {
     font-weight: 100;
 }
@@ -102,13 +98,8 @@ nav {
 }
 .products {
     margin: 8rem 3rem;
-    display: grid;
     grid-row-gap: 6rem;
-    @include break(500px) {
-        grid-template-columns: repeat(2, 1fr);
-    }
     justify-items: center;
-    // img { width: 300px;}
     a {
         display: flex;
         flex-direction: column;
@@ -124,7 +115,6 @@ footer {
     bottom: 0;
     width: 100%;
     overflow: hidden;
-
     padding: 4rem;
     @include break(500px) {
         a {
